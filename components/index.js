@@ -1,4 +1,5 @@
 import Property from './Property'
 import Layout from './Layout'
+import Navbar from './Navbar'
 
-export { Property, Layout };
+export { Property, Layout, Navbar };
