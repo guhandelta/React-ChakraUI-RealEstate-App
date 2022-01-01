@@ -13,6 +13,9 @@ const property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
         <Link href={`/property/${externalID}`} passHref>
             <Flex flexWrap="wrap" width="420px" p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer">
                 <Box w="full">
+                    <Box>
+                        <Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={400} height={260} />
+                    </Box>
                     <Flex justifyContent="space-between" paddingTop="2" alignItems="center">
                         <Box padding="3" color="green.400">{ isVerified && <GoVerified />}</Box>
                         <Text fontWeight="bold" fontSize="lg">AED {millify(price)}{ rentFrequency && `/${rentFrequency}`}</Text>
